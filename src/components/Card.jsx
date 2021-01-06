@@ -5,11 +5,12 @@ function Card(props) {
   return (
     <div className="card">
       <div className="top">
+      {/* <p>{props.idValue}</p> */}
         <h2 className="name">{props.name}</h2>
         <Avatar image={props.image} />
       </div>
       <div className="bottom">
-        <Detail name={props.name} email={props.email} />
+        <Detail number={props.number} email={props.email} />
       </div>
     </div>
   );
